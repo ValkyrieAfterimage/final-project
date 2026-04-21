@@ -1,0 +1,202 @@
+// header (obviously)
+
+header {
+  height: 92px;
+  width: 100%;
+  position: absolute;
+
+  nav {
+    height: 100%;
+    width: $sitewidth;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      a {
+        font-family: Gill-Sans;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .slash {
+        position: relative;
+        top: 2px;
+        font-size: 28px;
+        font-style: italic;
+        color: #ee4367;
+      }
+    }
+  }
+
+  &.light {
+    nav {
+      border-bottom: solid white 2px;
+      .logo {
+        background-image: url(../images/logo/logo-white.png);
+      }
+      .links {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    nav {
+      border-bottom: solid black 2px;
+      .logo {
+        background-image: url(../images/logo/logo-black.png);
+      }
+      .links {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= calc($sitewidth + 40px)) {
+  header {
+    display: flex;
+    nav {
+      width: 100%;
+      margin: 0 20px;
+    }
+  }
+}
+
+@media (width <= 550px) {
+  header {
+    height: fit-content;
+    nav {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 0;
+    }
+  }
+}
+
+// footer
+
+footer {
+  background-color: $hot-pink;
+
+  .content {
+    width: 696px;
+    margin: 0 auto;
+    padding: 36px 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      background-image: url(../images/logo/logo-white.png);
+    }
+
+    .address {
+      p {
+        font-family: Gill-Sans;
+        text-align: center;
+        color: white;
+        margin: 5px 0;
+      }
+    }
+
+    .footer-contact {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .newsletter {
+        width: 100%;
+        margin-bottom: 36px;
+
+        display: flex;
+        align-items: center;
+
+        input {
+          flex: auto;
+          height: 60px;
+
+          padding-left: 20px;
+          background-color: $pink;
+          border: none;
+
+          &::placeholder {
+            font-family: Gill-Sans;
+            font-size: 16px;
+            color: white;
+            opacity: 0.5;
+          }
+        }
+
+        a {
+          font-family: Gill-Sans;
+          font-size: 16px;
+          color: $hot-pink;
+          letter-spacing: 1.6px;
+          text-decoration: none;
+
+          .subscribe-button {
+            width: 167px;
+            height: 60px;
+
+            background-color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        i {
+          color: white;
+          font-size: 32px;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: white;
+      opacity: 50%;
+    }
+  }
+}
+
+@media (width <= calc(696px + 40px)) {
+  footer {
+    .content {
+      width: 100%;
+      padding: 36px 20px;
+    }
+  }
+}

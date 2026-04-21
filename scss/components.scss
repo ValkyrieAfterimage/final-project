@@ -1,0 +1,19 @@
+.wide-title {
+  font-family: Gill-Sans;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+
+  width: fit-content;
+  padding: 0 100px 10px 0;
+  border-bottom: solid 2px;
+
+  &.light-title {
+    border-color: white;
+    color: white;
+  }
+  &.dark-title {
+    border-color: black;
+    color: black;
+  }
+}

@@ -1,0 +1,35 @@
+.about {
+  width: $sitewidth;
+  margin: 0 auto;
+  padding: 178px 0 95px;
+
+  .banner {
+    height: 379px;
+    margin-bottom: 52px;
+
+    background-image:
+      linear-gradient($yellow-overlay), url("../images/about.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .wide-title {
+      position: relative;
+      top: 355px;
+    }
+  }
+
+  p {
+    font-family: Gill-Sans-Light-Italic;
+    letter-spacing: 1.6px;
+  }
+}
+
+@media (width <= calc($sitewidth + 40px)) {
+  .about {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+}
