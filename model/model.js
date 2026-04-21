@@ -251,7 +251,7 @@ const pageContent = {
                 <div class="month">JUN</div>
               </div>
               <div class="preview-content">
-                <img src="../images/blog.jpg" alt="" />
+                <img src="./images/blog.jpg" alt="" />
                 <h3>Sed et persipiatis unde omnis iste natus</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -269,7 +269,7 @@ const pageContent = {
                 <div class="month">JUL</div>
               </div>
               <div class="preview-content">
-                <img src="../images/blog.jpg" alt="" />
+                <img src="./images/blog.jpg" alt="" />
                 <h3>Sed et persipiatis unde omnis iste natus</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -287,7 +287,7 @@ const pageContent = {
                 <div class="month">AUG</div>
               </div>
               <div class="preview-content">
-                <img src="../images/blog.jpg" alt="" />
+                <img src="./images/blog.jpg" alt="" />
                 <h3>Sed et persipiatis unde omnis iste natus</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -305,7 +305,7 @@ const pageContent = {
                 <div class="month">NOV</div>
               </div>
               <div class="preview-content">
-                <img src="../images/blog.jpg" alt="" />
+                <img src="./images/blog.jpg" alt="" />
                 <h3>Sed et persipiatis unde omnis iste natus</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -323,7 +323,7 @@ const pageContent = {
                 <div class="month">DEC</div>
               </div>
               <div class="preview-content">
-                <img src="../images/blog.jpg" alt="" />
+                <img src="./images/blog.jpg" alt="" />
                 <h3>Sed et persipiatis unde omnis iste natus</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -495,7 +495,5 @@ const pageContent = {
 
 export function loadData(pageID) {
   const app = document.querySelector("#app");
-  app.innerHTML = pageContent[pageID] || `<div class="home"></div>`;
-
-  //   app.innerHTML = pageContent[pageID] || `<p>whuh oh</p>`;
+  app.innerHTML = pageContent[pageID] || `<p>whuh oh</p>`;
 }
